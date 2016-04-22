@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>在线聊天</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/chat.css"/>
+    <script type="text/javascript" src="node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>
+    <script type="text/javascript" src="js/chat.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="list">
+
+    </div>
+    <div class="content">
+        <div class="top">
+
+        </div>
+        <div class="bottom">
+            <div class="input">
+                <textarea>
+
+                </textarea>
+            </div>
+            <button id="sendBtn">发送</button>
+        </div>
+    </div>
+</div>
+<div id="loginWrapper">
+    <p id="info">正在连接服务器...</p>
+    <div id="nickWrapper">
+        <input type="text" placeHolder="nickname" id="nicknameInput" />
+        <input type="button" value="OK" id="loginBtn" />
+    </div>
+</div>
+</body>
+</html>
